@@ -1,3 +1,45 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: grey;
+    background-color: #162885;
+}
+
+a {
+    color: white;
+}
+
+header {
+    text-align: center;
+}
+
+.main {
+    text-align: center;
+}
+
+img {
+    width: 50%;
+
+}
+
+.Projekts {
+    text-align: center;
+
+}
+
+.about {
+    text-align: center;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: white;
 }
