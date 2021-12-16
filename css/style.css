@@ -8,14 +8,20 @@
 
 body {
     background-color: #162885;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
-    color: white;
+    color: #11f0a9;
 }
 
 header {
     text-align: center;
+
+}
+
+.logo {
+    width: 70px;
 }
 
 .main {
@@ -37,9 +43,74 @@ img {
 }
 
 h2 {
-    color: white;
+    color: #11f0a9;
 }
 
 p {
-    color: white;
+    color: #11f0a9;
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1.5rem;
+        grid-template-areas: 'logo about projekts'
+    }
+
+    .logo {
+        grid-area: logo;
+        margin: 20px;
+
+    }
+
+    .about {
+        grid-area: about;
+        margin: 20px;
+
+    }
+
+    .projekts {
+        grid-area: projekts;
+        margin: 20px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .Projekts {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        margin-left: 100px;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto;
+        grid-gap: 1.5rem;
+        grid-template-areas:'img-1 img-2'
+                            'img-3 img-4';
+    }
+
+    .img-1 {
+        grid-area: img-1;
+    }
+
+    .img-2 {
+        grid-area: img-2;
+    }
+
+    .img-3 {
+        grid-area: img-3;
+
+    }
+
+    .img-4 {
+        grid-area: img-4;
+    
+    }
+
+    .mig {
+        width: 350px;
+    }
 }
