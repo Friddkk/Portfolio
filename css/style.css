@@ -88,7 +88,8 @@ p {
         grid-template-columns: 1fr 1fr ;
         grid-template-rows: auto;
         grid-gap: 1.5rem;
-        grid-template-areas:'img-1 img-2'
+        grid-template-areas:'heading .'
+                            'img-1 img-2'
                             'img-3 img-4';
     }
 
@@ -108,9 +109,18 @@ p {
     .img-4 {
         grid-area: img-4;
     
+    
     }
 
     .mig {
         width: 350px;
     }
+
+    .heading {
+        grid-area: heading;
+    }
+
+
+        
+    
 }
